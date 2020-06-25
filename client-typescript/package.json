@@ -2,7 +2,7 @@
   "name": "client-typescript",
   "version": "0.0.0",
   "scripts": {
-    "generate:api": "openapi-generator generate -g typescript-angular -i ../spec/src/main/resources/openapi/api.yml -o ./build/openapi",
+    "generate:api": "openapi-generator generate -g typescript-angular -i ../spec/src/main/resources/openapi/v1/api.yml -o ./build/openapi",
     "ng": "ng",
     "start": "ng serve",
     "prebuild": "npm run generate:api",
