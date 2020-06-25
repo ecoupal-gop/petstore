@@ -1,0 +1,33 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+application-local.properties
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+# Spring local files
+application-local.properties
+src/main/resources/config/application-local.properties
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Log files
+*.log
+*.log.*.gz
