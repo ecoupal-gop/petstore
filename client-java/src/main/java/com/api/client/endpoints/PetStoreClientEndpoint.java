@@ -15,7 +15,7 @@ public class PetStoreClientEndpoint {
 
     private final PetsApi petsApi;
 
-    @GetMapping("/pets")
+    @GetMapping(value = "/pets", produces = { "application/stream+json", "application/json" })
     public Mono<ResponseEntity<Flux<Pet>>> listPetsWithApi() {
         Flux<Pet> petFlux = petsApi.listPets(10);
         return Mono.just(ResponseEntity.ok(petFlux));
