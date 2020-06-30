@@ -1,4 +1,4 @@
-package com.api.server;
+package com.api.client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,9 +6,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-public class PetStoreApplication {
+public class ClientApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(PetStoreApplication.class, args);
+        SpringApplication.run(ClientApplication.class, args);
     }
 }
